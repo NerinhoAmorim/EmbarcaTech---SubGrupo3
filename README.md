@@ -1,48 +1,93 @@
 # Programa Conversor de Unidades em Linguagem C
 
-## Descrição
-Este projeto tem como objetivo desenvolver um programa simples de conversão de unidades em linguagem C. Ele é parte de uma atividade prática para assimilação dos conceitos de versionamento utilizando Git e GitHub, com foco na colaboração e no trabalho em equipe. O programa será modularizado, permitindo que diferentes integrantes da equipe desenvolvam funcionalidades específicas de conversão.
+## Equipe
+
+**Líder do Projeto:**
+- Gabriel Pereira
+
+**Desenvolvedores:**
+- Gabriel Montenegro
+- Gabriel Vicente
+- Eduardo Marculino
+- Gustavo Acioly
+- Lucas Emmanuel
+- Mariana Campanati
+- Misla Garcia
+- Nerinho Nascimento
 
 ---
 
-## Estrutura do Projeto
+## Sobre o Projeto
+Este programa foi desenvolvido como parte de um projeto acadêmico para implementar um conversor de unidades utilizando a linguagem de programação C. O objetivo principal é converter entre diferentes unidades de medidas, proporcionando uma interface funcional e prática para o usuário.
 
-### Formação da Equipe
-- **Líder do Projeto**: Responsável pela gestão do repositório, aprovação de pull requests e organização das tarefas.
-- **Desenvolvedores** (até 9 integrantes): Cada desenvolvedor será responsável por implementar e testar uma funcionalidade específica de conversão.
+## Funcionalidades Planejadas
+Abaixo estão as conversões que o programa poderá realizar. A implementação de todas as funcionalidades é opcional e dependerá do planejamento da equipe:
 
-### Sugestões de Tarefas
-1. **Unidades de comprimento**: Conversão entre metro, centímetro, milímetro.
-2. **Unidades de massa**: Conversão entre quilograma, grama, tonelada.
-3. **Unidades de volume**: Conversão entre litro, mililitro, metros cúbicos.
-4. **Unidades de temperatura**: Conversão entre Celsius, Fahrenheit, Kelvin.
-5. **Unidades de velocidade**: Conversão entre km/h, m/s, mph.
-6. **Potência**: Conversão entre watts (W), quilowatts (kW), cavalos-vapor (cv ou hp).
-7. **Unidades de área**: Conversão entre metro quadrado, centímetro quadrado.
-8. **Unidades de tempo**: Conversão entre segundos, minutos, horas.
-9. **Dados digitais**: Conversão entre bits, bytes, kilobytes (KB), megabytes (MB), gigabytes (GB), terabytes (TB).
-10. **Interface de Usuário**: Desenvolver uma interface básica para interagir com o programa.
-11. **Testes e Depuração**: Garantir a funcionalidade e a confiabilidade de todas as conversões.
+1. **Unidades de Comprimento:**
+   - Metro, Centímetro, Milímetro
+2. **Unidades de Massa:**
+   - Quilograma, Grama, Tonelada
+3. **Unidades de Volume:**
+   - Litro, Mililitro, Metros Cúbicos
+4. **Unidades de Temperatura:**
+   - Celsius, Fahrenheit, Kelvin
+5. **Unidades de Velocidade:**
+   - km/h, m/s, mph
+6. **Unidades de Potência:**
+   - Watts (W), Quilowatts (kW), Cavalos-Vapor (cv ou hp)
+7. **Unidades de Área:**
+   - Metro Quadrado, Centímetro Quadrado
+8. **Unidades de Tempo:**
+   - Segundos, Minutos, Horas
+9. **Unidades de Armazenamento de Dados:**
+   - Bits, Bytes, Kilobytes (KB), Megabytes (MB), Gigabytes (GB), Terabytes (TB)
+10. **Interface de Usuário**
+    - Implementação de menus e interatividade com o usuário
+11. **Testes e Depuração**
+    - Identificação e correção de bugs
 
 ---
 
-## Como Configurar o Projeto
+## Estrutura da Equipe
+### Líder do Projeto
+- **Gabriel Pereira:**
+  - Gerência do repositório no GitHub.
+  - Organização do cronograma de tarefas.
 
+### Tarefas Específicas dos Desenvolvedores
+Cada desenvolvedor será responsável por uma ou mais tarefas específicas, tais como:
+
+1. Gabriel Montenegro: Unidades de Comprimento
+2. Gabriel Vicente: Unidades de Massa
+3. Gabriel Pereira: Unidades de Volume
+4. Gustavo Acioly: Unidades de Temperatura
+5. Lucas Emmanuel: Unidades de Velocidade
+6. Mariana Campanati: Unidades de Potência
+7. Misla Garcia: Unidades de Área
+8. Nerinho Nascimento: Unidades de Tempo e Armazenamento de Dados
+9. Testes e Interface de Usuário: Divisão entre desenvolvedores conforme necessidade
+
+---
+
+## Requisitos do Sistema
+- **Compilador C**: GCC ou similar
+- **Sistema Operacional:** Compatível com Windows, macOS ou Linux
+
+---
+
+## Como Executar o Projeto
 1. Clone o repositório:
    ```bash
-   git clone <URL_DO_REPOSITORIO>
+   git clone https://github.com/NerinhoAmorim/EmbarcaTech---SubGrupo3
    ```
-
-2. Entre na pasta do projeto:
+2. Navegue até o diretório do projeto:
    ```bash
-   cd programa-conversor
+   cd conversor-unidades
    ```
-
 3. Compile o programa:
    ```bash
-   gcc -o conversor main.c
+   gcc main.c -o conversor
    ```
-
 4. Execute o programa:
    ```bash
    ./conversor
@@ -50,51 +95,25 @@ Este projeto tem como objetivo desenvolver um programa simples de conversão de 
 
 ---
 
-## Estrutura do Repositório
-
-```plaintext
-/
-├── src/               # Código-fonte
-│   ├── main.c         # Arquivo principal
-│   ├── comprimento.c  # Conversões de comprimento
-│   ├── massa.c        # Conversões de massa
-│   ├── ...            # Outros módulos
-├── include/           # Arquivos de cabeçalho
-├── tests/             # Scripts de teste
-├── docs/              # Documentação
-├── README.md          # Descrição do projeto
-```
-
----
-
-## Fluxo de Trabalho
-
-1. **Criação de Branches**:
-   Cada funcionalidade deve ser implementada em uma branch separada com o seguinte padrão de nomenclatura:
-   ```plaintext
-   feature/<nome-da-funcionalidade>
-   ```
-
-2. **Pull Requests**:
-   Após implementar e testar a funcionalidade, submeta uma pull request para a branch `main`.
-
-3. **Revisão**:
-   O líder do projeto e outros membros devem revisar e aprovar as mudanças antes da fusão.
-
-4. **Testes**:
-   Execute os testes antes de concluir o merge para garantir a estabilidade do código.
-
----
-
 ## Contribuição
-
-1. Faça um fork do repositório.
-2. Crie sua branch para a funcionalidade desejada.
-3. Envie as mudanças para o seu fork.
-4. Submeta uma pull request para o repositório original.
+Contribuições são bem-vindas! Siga as diretrizes abaixo:
+- Faça um fork do projeto.
+- Crie uma branch para sua funcionalidade:
+  ```bash
+  git checkout -b minha-nova-funcionalidade
+  ```
+- Commit suas alterações:
+  ```bash
+  git commit -m "Descrição das mudanças"
+  ```
+- Envie sua branch:
+  ```bash
+  git push origin minha-nova-funcionalidade
+  ```
+- Abra um Pull Request para revisão.
 
 ---
 
 ## Licença
-Este projeto é distribuído sob a licença MIT. Veja o arquivo `LICENSE` para mais informações.
+Este projeto é de uso educacional e não possui uma licença oficial.
 
