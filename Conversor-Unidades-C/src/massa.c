@@ -1,4 +1,5 @@
 #include "include/massa.h"
+#include "stdio.h"
 
 void Conversao_de_massa() {
     double valor; // Declarando variável que irá receber o valor a ser convertido
