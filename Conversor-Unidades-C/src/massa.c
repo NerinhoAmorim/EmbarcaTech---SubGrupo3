@@ -1,3 +1,5 @@
+#include "include/massa.h"
+
 void Conversao_de_massa() {
     double valor; // Declarando variável que irá receber o valor a ser convertido
     int opc; // Declarando variável que irá receber a opção de conversão 
