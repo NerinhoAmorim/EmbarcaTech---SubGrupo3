@@ -1,0 +1,31 @@
+```gitignore
+Diretórios e arquivos temporários do sistema
+.DS_Store           # Arquivo de sistema no macOS
+Thumbs.db           # Arquivo de sistema no Windows
+*.swp               # Arquivos temporários do Vim
+*.bak               # Arquivos de backup
+*.tmp               # Arquivos temporários
+
+Diretórios de compilação (compilação do GCC)
+*.o                 # Arquivos objeto gerados pela compilação
+*.out               # Arquivos de saída temporários
+*.exe               # Arquivos executáveis no Windows
+*.a                 # Bibliotecas estáticas
+*.so                # Bibliotecas compartilhadas (no Linux)
+*.dSYM              # Arquivos de símbolos do macOS (caso você use o Xcode)
+
+Diretórios de compilação específicos do GCC
+src/output/         # Diretório onde o executável é gerado
+
+Arquivos de configuração do VSCode
+.vscode/            # Diretório de configuração do VSCode
+Arquivos de configuração do sistema
+*.log               # Arquivos de log
+*.pid               # Arquivos de ID de processo
+
+Arquivos de configuração do Makefile
+Makefile.old        # Arquivo de backup do Makefile
+
+Arquivos de compilação temporários do GCC
+*.d                 # Arquivos dependentes do GCC
+```
