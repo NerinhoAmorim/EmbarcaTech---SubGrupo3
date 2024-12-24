@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "include/conversao.h"
+#include "include/tempo.h"
 
 int main() {
     int opcao;
