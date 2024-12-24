@@ -29,7 +29,7 @@ int main() {
             break;
         case 2:
             // Função de conversão de massa
-            conversao_massa(valor);
+            Conversao_de_massa(valor);
             break;
         case 3:
             // Função de conversão de volume
@@ -37,7 +37,7 @@ int main() {
             break;
         case 4:
             // Função de conversão de temperatura
-            conversao_temperatura(valor);
+            conversorDeTemperatura(valor);
             break;
         case 5:
             // Função de conversão de velocidade
@@ -45,7 +45,7 @@ int main() {
             break;
         case 6:
             // Função de conversão de potência
-            conversao_potencia(valor);
+            Conversao_de_Potencia(valor);
             break;
         case 7:
             // Função de conversão de área
@@ -53,7 +53,7 @@ int main() {
             break;
         case 8:
             // Função de conversão de tempo
-            conversao_tempo(valor);
+            conversorDeTempo(valor);
             break;
         case 9:
             // Função de conversão de dados
