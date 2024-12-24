@@ -1,6 +1,6 @@
 CC = gcc
-CFLAGS = -Wall -Wextra -g3
-SRC = src/main.c src/conversao.c  # Adicione conversao.c aqui
+CFLAGS = -Wall -Wextra -g3 -I./src/include  # Caminho para os cabeçalhos
+SRC = src/main.c src/conversao.c tests/teste-conversao.c  # Inclua conversao.c
 OBJ = (SRC:.c=.o)
 EXEC = conversor
 
@@ -15,4 +15,8 @@ clean:
 	rm -f(OBJ) (EXEC)
 
 run:(EXEC)
-	./$(EXEC)
+	./(EXEC)
+
+test:(OBJ)
+	(CC)(OBJ) -o test_exe
+	./test_exe

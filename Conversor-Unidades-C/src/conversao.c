@@ -45,8 +45,17 @@ void conversao_area(double valor) {
 
 // Função de conversão de tempo
 void conversao_tempo(double valor) {
-    printf("Conversão de tempo: %.2f segundos\n", valor);
-    // Adicione as conversões de tempo aqui
+    // Conversões de segundos para outras unidades
+    double segundos = valor;
+    double minutos = valor / 60.0;
+    double horas = valor / 3600.0;
+    double dias = valor / 86400.0;
+
+    // Exibe o valor em diferentes unidades de tempo
+    printf("Conversão de tempo: %.2f segundos\n", segundos);
+    printf("Em minutos: %.2f minutos\n", minutos);
+    printf("Em horas: %.2f horas\n", horas);
+    printf("Em dias: %.2f dias\n", dias);
 }
 
 // Função de conversão de dados
