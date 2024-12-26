@@ -1,5 +1,9 @@
 #include <stdio.h>
 #include "include/tempo.h"
+#include "include/massa.h"
+#include "include/potencia.h"
+#include "include/temperatura.h"
+#include "include/comprimento.h"
 
 int main() {
     int opcao;
