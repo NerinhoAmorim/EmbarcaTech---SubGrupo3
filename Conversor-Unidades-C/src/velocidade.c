@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "include/velocidade.h"
 
 struct Velocidade {
     int tipo;
