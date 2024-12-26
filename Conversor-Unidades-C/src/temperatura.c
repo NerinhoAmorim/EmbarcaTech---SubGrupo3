@@ -44,11 +44,11 @@ void conversorDeTemperatura() {
 
     // Definição da unidade de medida na saída
     if (unidadeFinal == 1)
-        unidadeChar = "C";
+        unidadeChar = 'C';
     if (unidadeFinal == 2);
-        unidadeChar = "F";
+        unidadeChar = 'F';
     if (unidadeFinal == 3)
-        unidadeChar = "K";
+        unidadeChar = 'K';
 
     // Requisição e leitura da temperatura na unidade a ser convertida
     printf("\nDigite o valor da temperatura: ");
