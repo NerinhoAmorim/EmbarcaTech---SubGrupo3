@@ -45,7 +45,7 @@ void conversorDeTemperatura() {
     // Definição da unidade de medida na saída
     if (unidadeFinal == 1)
         unidadeChar = 'C';
-    if (unidadeFinal == 2);
+    if (unidadeFinal == 2)
         unidadeChar = 'F';
     if (unidadeFinal == 3)
         unidadeChar = 'K';
