@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "include/area.h"
 
 // Função para converter de metros quadrados para centímetros quadrados
 double metros_para_centimetros(double metros) {
@@ -10,23 +11,18 @@ double centimetros_para_metros(double centimetros) {
     return centimetros / 10000; // 1 cm² = 0,0001 m²
 }
 
-// Função para exibir o menu de conversão de áreas
-void exibir_menu_areas() {
-    printf("=== Conversor de Áreas ===\n");
-    printf("1. Converter de m² para cm²\n");
-    printf("2. Converter de cm² para m²\n");
-    printf("0. Sair\n");
-    printf("==========================\n");
-    printf("Escolha uma opção: ");
-}
-
 // Função que processa as conversões com base na opção escolhida
 void processar_conversao_areas() {
     int opcao;
     double area, resultado;
 
     do {
-        exibir_menu_areas(); // Exibe o menu de conversão
+        printf("=== Conversor de Áreas ===\n");
+        printf("1. Converter de m² para cm²\n");
+        printf("2. Converter de cm² para m²\n");
+        printf("0. Sair\n");
+        printf("==========================\n");
+        printf("Escolha uma opção: ");
         scanf("%d", &opcao); // Lê a opção do usuário
 
         switch (opcao) {
