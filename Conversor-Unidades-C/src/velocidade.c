@@ -1,58 +1,47 @@
 #include <stdio.h>
 #include "include/velocidade.h"
 
-struct Velocidade {
-    int tipo;
-    float valor;
-    int tipo2;
-};
-
-struct Velocidade CadastrarVelocidade() {
-    struct Velocidade v;
+void ConverterVelocidade() {
+    float conver, valor;
+    int tipo, tipo2;
 
     printf("Digite o valor: ");
-    scanf("%f", &v.valor);
+    scanf("%f", &valor);
 
     printf("Escolha o tipo de medida:\n");
     printf("1 - km/h  2 - m/s  3 - mph\n");
-    scanf("%d", &v.tipo);
+    scanf("%d", &tipo);
 
     printf("Para qual medida você vai querer converter:\n");
     printf("1 - km/h  2 - m/s  3 - mph\n");
-    scanf("%d", &v.tipo2);
+    scanf("%d", &tipo2);
 
-    return v;
-}
-
-void ConverterVelocidade(struct Velocidade v) {
-    float conver;
-
-    if (v.tipo == 1 && v.tipo2 == 1) {
-        conver = v.valor;
+    if (tipo == 1 && tipo2 == 1) {
+        conver = valor;
         printf("%.2f km/h\n", conver);
-    } else if (v.tipo == 1 && v.tipo2 == 2) {
-        conver = v.valor / 3.6;
+    } else if (tipo == 1 && tipo2 == 2) {
+        conver = valor / 3.6;
         printf("%.2f m/s\n", conver);
-    } else if (v.tipo == 1 && v.tipo2 == 3) {
-        conver = v.valor / 1.609;
+    } else if (tipo == 1 && tipo2 == 3) {
+        conver = valor / 1.609;
         printf("%.2f mph\n", conver);
-    } else if (v.tipo == 2 && v.tipo2 == 1) {
-        conver = v.valor * 3.6;
+    } else if (tipo == 2 && tipo2 == 1) {
+        conver = valor * 3.6;
         printf("%.2f km/h\n", conver);
-    } else if (v.tipo == 2 && v.tipo2 == 2) {
-        conver = v.valor;
+    } else if (tipo == 2 && tipo2 == 2) {
+        conver = valor;
         printf("%.2f m/s\n", conver);
-    } else if (v.tipo == 2 && v.tipo2 == 3) {
-        conver = v.valor * 2.237;
+    } else if (tipo == 2 && tipo2 == 3) {
+        conver = valor * 2.237;
         printf("%.2f mph\n", conver);
-    } else if (v.tipo == 3 && v.tipo2 == 1) {
-        conver = v.valor * 1.609;
+    } else if (tipo == 3 && tipo2 == 1) {
+        conver = valor * 1.609;
         printf("%.2f km/h\n", conver);
-    } else if (v.tipo == 3 && v.tipo2 == 2) {
-        conver = v.valor / 2.237;
+    } else if (tipo == 3 && tipo2 == 2) {
+        conver = valor / 2.237;
         printf("%.2f m/s\n", conver);
     } else {
-        conver = v.valor;
+        conver = valor;
         printf("%.2f mph\n", conver);
     }
 }

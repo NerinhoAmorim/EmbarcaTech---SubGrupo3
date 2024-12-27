@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "tempo.h"
+#include "include/tempo.h"
 
 // Funções de conversão
 float iguall(float tempo) { return tempo; }
@@ -25,9 +25,9 @@ void conversorDeTempo() {
     // O parâmetro float é o tempo inicial, o retorno float é o tempo pós conversão
     float (*tabelaDeConversao[4][4])(float) = {
         {iguall, segundosMinutos, segundosHoras, segundosDias},
-        {minutosSegundos, igual, minutosHoras, minutosDias},
-        {horasSegundos, horasMinutos, igual, horasDias},
-        {diasSegundos, diasMinutos, diasHoras, igual}
+        {minutosSegundos, iguall, minutosHoras, minutosDias},
+        {horasSegundos, horasMinutos, iguall, horasDias},
+        {diasSegundos, diasMinutos, diasHoras, iguall}
     };
 
     // Seletor da unidade de tempo inicial
