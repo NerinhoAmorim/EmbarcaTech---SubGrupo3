@@ -2,7 +2,7 @@
 #include "include/comprimento.h"
 
 // Funções de conversão
-float igual(float valor) { return valor; }
+float igualll(float valor) { return valor; }
 float metrosParaCentimetros(float metros) { return metros * 100.0; }
 float metrosParaMilimetros(float metros) { return metros * 1000.0; }
 float metrosParaQuilometros(float metros) { return metros / 1000.0; }
@@ -23,7 +23,7 @@ void conversorDeComprimento() {
 
     // Matriz de escolha de função de conversão
     float (*tabelaDeConversao[4][4])(float) = {
-        {igual, metrosParaCentimetros, metrosParaMilimetros, metrosParaQuilometros},
+        {igualll, metrosParaCentimetros, metrosParaMilimetros, metrosParaQuilometros},
         {centimetrosParaMetros, igual, centimetrosParaMilimetros, centimetrosParaQuilometros},
         {milimetrosParaMetros, milimetrosParaCentimetros, igual, milimetrosParaQuilometros},
         {quilometrosParaMetros, quilometrosParaCentimetros, quilometrosParaMilimetros, igual}

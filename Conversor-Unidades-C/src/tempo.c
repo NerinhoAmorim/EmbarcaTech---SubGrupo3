@@ -2,7 +2,7 @@
 #include "tempo.h"
 
 // Funções de conversão
-float igual(float tempo) { return tempo; }
+float iguall(float tempo) { return tempo; }
 float segundosMinutos(float s) { return s / 60.0; }
 float segundosHoras(float s) { return s / 3600.0; }
 float segundosDias(float s) { return s / 86400.0; }
@@ -24,7 +24,7 @@ void conversorDeTempo() {
     // Matriz de escolha de função de conversão.
     // O parâmetro float é o tempo inicial, o retorno float é o tempo pós conversão
     float (*tabelaDeConversao[4][4])(float) = {
-        {igual, segundosMinutos, segundosHoras, segundosDias},
+        {iguall, segundosMinutos, segundosHoras, segundosDias},
         {minutosSegundos, igual, minutosHoras, minutosDias},
         {horasSegundos, horasMinutos, igual, horasDias},
         {diasSegundos, diasMinutos, diasHoras, igual}

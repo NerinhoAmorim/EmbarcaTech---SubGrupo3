@@ -1,5 +1,5 @@
-#ifndef DIGITAL_H
-#define DIGITAL_H
+#ifndef DADOS_H
+#define DADOS_H
 
 #define B_KBC 1024.0     
 #define B_MBC 1048576.0     
@@ -20,6 +20,6 @@ double gb_b(double giga_byte);
 double gb_kb(double giga_byte);
 double gb_mb(double giga_byte);
 
-void executar_digital();
+void converter_dados();
 
 #endif
