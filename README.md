@@ -11,7 +11,6 @@ Este repositório contém o projeto "Programa Conversor de Unidades", desenvolvi
 Guilherme Pereira
 
 **Desenvolvedores:**  
-- Eduardo Marculino  
 - Gabriel Monteiro  
 - Gabriel Vicente  
 - Gustavo Acioly  
