@@ -2,7 +2,7 @@
 #define temperatura_h
 
 // Funções de conversão
-float igual(float value);
+float temperatura(float value);
 float celsiusFahrenheit(float c);
 float celsiusKelvin(float c);
 float fahrenheitCelsius(float f);

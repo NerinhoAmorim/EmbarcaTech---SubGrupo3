@@ -2,7 +2,7 @@
 #include "include/temperatura.h"
 
 // Funções de conversão
-float igual(float temperatura) { return temperatura; }
+float temperatura(float temperatura) { return temperatura; }
 float celsiusFahrenheit(float c) { return (c * 9 / 5) + 32; }
 float celsiusKelvin(float c) { return c + 273.15; }
 float fahrenheitCelsius(float f) { return (f - 32) * 5 / 9; }
@@ -18,9 +18,9 @@ void conversorDeTemperatura() {
     // Matriz de escolha de função de conversão.
     // O parâmetro float é a temperatura inicial, o retorno float é a temperatura pós conversão
     float (*tabelaDeConversao[3][3])(float) = {
-    {igual, celsiusFahrenheit, celsiusKelvin},
-    {fahrenheitCelsius, igual, fahrenheitKelvin},
-    {kelvinCelsius, kelvinFahrenheit, igual}
+    {temperatura, celsiusFahrenheit, celsiusKelvin},
+    {fahrenheitCelsius, temperatura, fahrenheitKelvin},
+    {kelvinCelsius, kelvinFahrenheit, temperatura}
     };
 
     // Seletor da unidade de temperatura inicial
