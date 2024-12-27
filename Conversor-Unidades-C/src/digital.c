@@ -1,49 +1,72 @@
-#include "digital.h"
+#include <stdio.h>
+#include "dados.h"
 
-double b_kb(double byte) {
-    return byte / B_KBC;
-}
+void converter_dados(int opcao, double valor) {
+    double resultado;
 
-double b_mb(double byte) {
-    return byte / B_MBC;
-}
+    switch (opcao) {
+        case 1: // byte -> KB
+            resultado = b_kb(valor);
+            printf("Resultado: %.2lf KB\n", resultado);
+            break;
 
-double b_gb(double byte) {
-    return byte / B_GBC;
-}
+        case 2: // byte -> MB
+            resultado = b_mb(valor);
+            printf("Resultado: %.2lf MB\n", resultado);
+            break;
 
-double kb_b(double kilo_byte) {
-    return kilo_byte * B_KBC;
-}
+        case 3: // byte -> GB
+            resultado = b_gb(valor);
+            printf("Resultado: %.2lf GB\n", resultado);
+            break;
 
-double kb_mb(double kilo_byte) {
-    return kilo_byte / (B_MBC / B_KBC);
-}
+        case 4: // KB -> byte
+            resultado = kb_b(valor);
+            printf("Resultado: %.2lf bytes\n", resultado);
+            break;
 
-double kb_gb(double kilo_byte) {
-    return kilo_byte / (B_GBC / B_KBC);
-}
+        case 5: // KB -> MB
+            resultado = kb_mb(valor);
+            printf("Resultado: %.2lf MB\n", resultado);
+            break;
 
-double mb_b(double mega_byte) {
-    return mega_byte * B_MBC;
-}
+        case 6: // KB -> GB
+            resultado = kb_gb(valor);
+            printf("Resultado: %.2lf GB\n", resultado);
+            break;
 
-double mb_kb(double mega_byte) {
-    return mega_byte * (B_MBC / B_KBC);
-}
+        case 7: // MB -> byte
+            resultado = mb_b(valor);
+            printf("Resultado: %.2lf bytes\n", resultado);
+            break;
 
-double mb_gb(double mega_byte) {
-    return mega_byte / (B_GBC / B_MBC);
-}
+        case 8: // MB -> KB
+            resultado = mb_kb(valor);
+            printf("Resultado: %.2lf KB\n", resultado);
+            break;
 
-double gb_b(double giga_byte) {
-    return giga_byte * B_GBC;
-}
+        case 9: // MB -> GB
+            resultado = mb_gb(valor);
+            printf("Resultado: %.2lf GB\n", resultado);
+            break;
 
-double gb_kb(double giga_byte) {
-    return giga_byte * (B_GBC / B_KBC);
-}
+        case 10: // GB -> byte
+            resultado = gb_b(valor);
+            printf("Resultado: %.2lf bytes\n", resultado);
+            break;
 
-double gb_mb(double giga_byte) {
-    return giga_byte * (B_GBC / B_MBC);
+        case 11: // GB -> KB
+            resultado = gb_kb(valor);
+            printf("Resultado: %.2lf KB\n", resultado);
+            break;
+
+        case 12: // GB -> MB
+            resultado = gb_mb(valor);
+            printf("Resultado: %.2lf MB\n", resultado);
+            break;
+
+        default:
+            printf("Opcao invalida!\n");
+            break;
+    }
 }
