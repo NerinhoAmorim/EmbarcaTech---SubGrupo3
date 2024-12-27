@@ -2,6 +2,7 @@
 #include <windows.h>
 #include <stdio.h>
 #include <stdlib.h>
+#include <wchar.h>  // Para lidar com caracteres wide
 #include "include/tempo.h"
 #include "include/massa.h"
 #include "include/potencia.h"
@@ -13,29 +14,32 @@
 #include "include/velocidade.h"
 
 int main() {
-    SetConsoleOutputCP(CP_UTF8);
+    SetConsoleOutputCP(CP_UTF8);  // Definir a saída do console para UTF-8
     int opcao;
 
-    printf("Bem-vindo ao Conversor de Unidades!\n");
+    // Usar wprintf para impressão de texto com caracteres Unicode
+    wprintf(L"Bem-vindo ao Conversor de Unidades!\n");
 
     do {
-        printf("Escolha a categoria de conversão:\n");
-        printf("0. Encerra o programa\n");
-        printf("1. Comprimento\n");
-        printf("2. Massa\n");
-        printf("3. Volume\n");
-        printf("4. Temperatura\n");
-        printf("5. Velocidade\n");
-        printf("6. Potência\n");
-        printf("7. Área\n");
-        printf("8. Tempo\n");
-        printf("9. Digital\n");
-        printf("Digite a opção desejada: ");
+        wprintf(L"Escolha a categoria de conversão:\n");
+        wprintf(L"0. Encerra o programa\n");
+        wprintf(L"1. Comprimento\n");
+        wprintf(L"2. Massa\n");
+        wprintf(L"3. Volume\n");
+        wprintf(L"4. Temperatura\n");
+        wprintf(L"5. Velocidade\n");
+        wprintf(L"6. Potência\n");
+        wprintf(L"7. Área\n");
+        wprintf(L"8. Tempo\n");
+        wprintf(L"9. Digital\n");
+        wprintf(L"Digite a opção desejada: ");
+        
+        // Para entrada de números inteiros, use scanf como normal
         scanf("%d", &opcao);
 
         switch(opcao) {
             case 0:
-                printf("\n\nEncerrando o conversor\n\n");
+                wprintf(L"\n\nEncerrando o conversor\n\n");
                 system("pause");
                 exit(0);
             case 1:
@@ -51,8 +55,7 @@ int main() {
                 conversorDeTemperatura();
                 break;
             case 5: {
-                struct Velocidade v;
-                ConverterVelocidade(v);
+                ConverterVelocidade();
                 break;
             }
             case 6:
@@ -68,7 +71,7 @@ int main() {
                 converter_dados();
                 break;
             default:
-                printf("Opção inválida!\n");
+                wprintf(L"Opção inválida!\n");
         }
     } while (1);
 
